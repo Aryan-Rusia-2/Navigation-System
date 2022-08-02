@@ -1,0 +1,68 @@
+Name:  Aryan Rusia
+SID:   1669003
+CCID:  rusia
+CMPUT 275 Winter 2022
+Assignment 1 - Trivial Navigation System
+-------------------------------------------
+
+
+Included Files :
+
+  1) digraph.cpp
+  2) digraph.h
+  3) README
+  4) edmonton-roads-2.0.1.txt
+  5) dijkstra.cpp
+  6) dijkstra.h
+  7) Makefile
+  8) server.cpp
+  9) wdigraph.h
+
+
+
+Running Instructions :
+
+   i) Go the soln directory and open the terminal
+  ii) Write make server, this will compile your code
+ iii) Write ./server, and then provide the input and get the desired result.
+  iv) If one wants to run the provided test cases (for eg. test case 1), then 
+      run the following command -:
+      
+      ./server < ../tests/test01-input.txt > mysol.txt
+
+      diff mysol.txt ../tests/test01-output.txt
+
+   v) If no erros shows up, then the output is correct.
+
+
+Files Modified :
+
+  i) Server.cpp
+
+ ii) dijkstra.cpp
+
+iii) dijkstra.h --> I declared two more alias i) long_int_int and ii) int_int
+
+
+
+Notes :
+
+ i) I definded 6 functions in the server.cpp file. I have mentioned their names below -:
+    
+    --> void readGraph(string filename, WDigraph &graph, unordered_map<int, Point> &points);
+
+    --> void Client_input(int &id_startNode, int &id_endNode, unordered_map<int, Point> &points);
+
+    --> int Nearest_Vertex(Point &location, unordered_map<int, Point> &points);
+
+    --> long long manhattan(const Point &pt1, const Point &pt2);
+
+    --> void if_no_path(list<int> &path, unordered_map<int, PIL> tree, int id_endNode);
+
+    --> void program_end();
+
+ ii) I used priority queue to write dijkstra's algorithm. To use priority queue as min heap,
+     I used the following format -: priority_queue<type, vector<type>, greater<type>> name;
+
+
+Assumptions : None
