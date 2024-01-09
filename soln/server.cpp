@@ -1,11 +1,3 @@
-/*
-Name:  Aryan Rusia
-SID:   1669003
-CCID:  rusia
-CMPUT 275 Winter 2022
-Assignment 1 - Trivial Navigation System (Part 1)
--------------------------------------------
-*/
 #include <iostream>
 #include <fstream>
 #include <list>
